@@ -8,3 +8,4 @@ obj/*
 .vsconfig 
 *.sln 
 *.csproj 
+Assets/Physics/Bounce With Friction.physicMaterial
