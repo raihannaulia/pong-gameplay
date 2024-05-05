@@ -10,13 +10,12 @@ public class PaddleController : MonoBehaviour
     public KeyCode downKey;
 
     private Rigidbody2D rig;
-    // Start is called before the first frame update
+
     void Start()
     {
         rig = GetComponent<Rigidbody2D>(); 
     }
 
-    // Update is called once per frame
     void Update()
     {
         MoveObject(GetInput());
@@ -37,6 +36,8 @@ public class PaddleController : MonoBehaviour
 
     private void MoveObject(Vector2 movement)
     {
+        Debug.Log("Paddle" +  movement);
         rig.velocity = movement;
     }
+
 }
