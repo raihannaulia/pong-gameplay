@@ -8,6 +8,7 @@ public class BallController : MonoBehaviour
 
     public Vector2 resetPosition;
 
+
     private Rigidbody2D rig;
     void Start()
     {

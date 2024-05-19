@@ -35,7 +35,7 @@ public class PowerUpManager : MonoBehaviour
     }
     public void GenerateRandomPowerUp()
     {
-        GenerateRandomPowerUp(new Vector2(Random.Range(powerUpAreaMin.x, powerUpAreaMax.x), Random.Range(powerUpAreaMin.y, powerUpAreaMax.y)));    
+        GenerateRandomPowerUp(new Vector2(Random.Range(powerUpAreaMin.x, powerUpAreaMax.x), Random.Range(powerUpAreaMin.y, powerUpAreaMax.y)));
     }
 
     public void GenerateRandomPowerUp(Vector2 position)
@@ -57,6 +57,7 @@ public class PowerUpManager : MonoBehaviour
 
         GameObject powerUp = Instantiate(powerUpTemplateList[randomIndex], new Vector3(position.x, position.y, powerUpTemplateList[randomIndex].transform.position.z), Quaternion.identity, spawnArea);
         powerUp.SetActive(true);
+
 
         powerUpList.Add(powerUp);
     }
